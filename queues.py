@@ -35,6 +35,7 @@ def dequeue():
     global front,rear
     if empty():
         speak_text("no elements its underflow")
+        return
     a=stk.pop(0)
     if rear==0:
         front-=1
@@ -48,6 +49,8 @@ def peek():
     global front,rear
     if empty():
         speak_text("no elements its underflow")
+        return
+    speak("you want me to show you front and rear elements let me tell you")
     speak_text("front=",stk[front])
     speak_text("rear=",stk[rear])
     
@@ -56,6 +59,7 @@ def printstk():
     global front,rear
     if empty():
         speak_text("no elements its underflow")
+        return
     speak("printing queue")
     for i in stk:
         speak(i)
@@ -75,7 +79,6 @@ while True:
     elif choice==2:
         print(dequeue())
     elif(choice == 3):
-        speak("you want me to show you front and rear elements let me tell you")
         peek()
     elif choice==4:
         printstk()

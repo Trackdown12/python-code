@@ -1,7 +1,7 @@
-import pyttsx3
-a={}
-for i in range(0,4):
-    b=input("enter name:")
-    c=input("enter surname:")
-    a.update({b:c})
-print(a)    
+a=5
+for i in range(0,a):
+    print(" "*(a-i-1),end="")
+    for j in range(0,i+1):
+        print(i-j+1,end="")
+    print()
+    a=5

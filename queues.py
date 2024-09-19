@@ -45,7 +45,7 @@ def dequeue():
     speak(f"you want to delete an element so i am popping front element {a} in queue")
     return a
 def peek():
-    #defiining a function to check rear and frotement of queue 
+    #defiining a function to check rear and front element of queue 
     global front,rear
     if empty():
         speak_text("no elements its underflow")

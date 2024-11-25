@@ -5,3 +5,4 @@ for i in range(0,a):
         print(i-j+1,end="")
     print()
     a=5
+print("end")
